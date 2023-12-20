@@ -1,0 +1,44 @@
+2023-12-20 02:46:17,157 - INFO - Best  Precision: 0.7602996, Recall: 0.8675214, F1: 0.8103792
+INFO:my_logger:Best  Precision: 0.7602996, Recall: 0.8675214, F1: 0.8103792
+2023-12-20 02:46:17,158 - INFO - episode_0 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.810379241516966, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 267, 268]
+INFO:my_logger:episode_0 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.810379241516966, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 267, 268]
+2023-12-20 02:53:25,860 - INFO - Best  Precision: 0.7519084, Recall: 0.8418803, F1: 0.7943548
+INFO:my_logger:Best  Precision: 0.7519084, Recall: 0.8418803, F1: 0.7943548
+2023-12-20 02:53:25,862 - INFO - episode_1 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.7943548387096774, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 301, 302, 341, 342, 385, 386]
+INFO:my_logger:episode_1 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.7943548387096774, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 301, 302, 341, 342, 385, 386]
+2023-12-20 03:00:33,587 - INFO - Best  Precision: 0.7548638, Recall: 0.8290598, F1: 0.7902240
+INFO:my_logger:Best  Precision: 0.7548638, Recall: 0.8290598, F1: 0.7902240
+2023-12-20 03:00:33,589 - INFO - episode_2 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.7902240325865579, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 247, 248]
+INFO:my_logger:episode_2 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.7902240325865579, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 247, 248]
+2023-12-20 03:07:47,426 - INFO - Best  Precision: 0.7868852, Recall: 0.8205128, F1: 0.8033473
+INFO:my_logger:Best  Precision: 0.7868852, Recall: 0.8205128, F1: 0.8033473
+2023-12-20 03:07:47,428 - INFO - episode_3 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.803347280334728, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 301, 302, 389, 390, 397, 398, 851, 852]
+INFO:my_logger:episode_3 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.803347280334728, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 301, 302, 389, 390, 397, 398, 851, 852]
+2023-12-20 03:14:57,264 - INFO - Best  Precision: 0.7591241, Recall: 0.8888889, F1: 0.8188976
+INFO:my_logger:Best  Precision: 0.7591241, Recall: 0.8888889, F1: 0.8188976
+2023-12-20 03:14:57,266 - INFO - episode_4 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8188976377952755, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 225, 226, 259, 260]
+INFO:my_logger:episode_4 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8188976377952755, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 225, 226, 259, 260]
+2023-12-20 03:22:02,625 - INFO - Best  Precision: 0.7033333, Recall: 0.9017094, F1: 0.7902622
+INFO:my_logger:Best  Precision: 0.7033333, Recall: 0.9017094, F1: 0.7902622
+2023-12-20 03:22:02,626 - INFO - episode_5 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.7902621722846441, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 347, 348, 395, 396, 781, 782]
+INFO:my_logger:episode_5 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.7902621722846441, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 347, 348, 395, 396, 781, 782]
+2023-12-20 03:29:07,209 - INFO - Best  Precision: 0.8407080, Recall: 0.8119658, F1: 0.8260870
+INFO:my_logger:Best  Precision: 0.8407080, Recall: 0.8119658, F1: 0.8260870
+2023-12-20 03:29:07,210 - INFO - episode_6 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8260869565217391, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 267, 268, 415, 416]
+INFO:my_logger:episode_6 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8260869565217391, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 267, 268, 415, 416]
+2023-12-20 03:36:10,486 - INFO - Best  Precision: 0.7849057, Recall: 0.8888889, F1: 0.8336673
+INFO:my_logger:Best  Precision: 0.7849057, Recall: 0.8888889, F1: 0.8336673
+2023-12-20 03:36:10,487 - INFO - episode_7 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8336673346693386, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18, 39, 40, 51, 52, 407, 408, 705, 706]
+INFO:my_logger:episode_7 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8336673346693386, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18, 39, 40, 51, 52, 407, 408, 705, 706]
+2023-12-20 03:43:13,060 - INFO - Best  Precision: 0.7975709, Recall: 0.8418803, F1: 0.8191268
+INFO:my_logger:Best  Precision: 0.7975709, Recall: 0.8418803, F1: 0.8191268
+2023-12-20 03:43:13,061 - INFO - episode_8 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8191268191268192, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 487, 488]
+INFO:my_logger:episode_8 Task: amazon_google_SchemaEnr_PromptEM f1-score: 0.8191268191268192, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 487, 488]
+DEBUG:filelock:Attempting to acquire lock 139861818571168 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139861818571168 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139861818571168 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139861818571168 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139861818571168 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139861818571168 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139861818571168 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139861818571168 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

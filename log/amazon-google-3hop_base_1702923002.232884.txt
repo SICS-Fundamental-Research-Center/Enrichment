@@ -1,0 +1,1 @@
+2023-12-19 02:14:50,920 - INFO - episode_0 Task: amazon-google-3hop_base f1-score: 0.6864988558352402, path: [0, 1, 2, 3, 4, 5, 6, 7, 8]

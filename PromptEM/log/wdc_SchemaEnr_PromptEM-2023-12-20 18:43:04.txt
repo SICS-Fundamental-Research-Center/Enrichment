@@ -1,0 +1,28 @@
+2023-12-20 18:45:27,345 - INFO - Best  Precision: 0.8170347, Recall: 0.8662207, F1: 0.8409091
+INFO:my_logger:Best  Precision: 0.8170347, Recall: 0.8662207, F1: 0.8409091
+2023-12-20 18:45:27,346 - INFO - episode_0 Task: wdc_SchemaEnr_PromptEM f1-score: 0.8409090909090909, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_0 Task: wdc_SchemaEnr_PromptEM f1-score: 0.8409090909090909, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-20 18:47:47,975 - INFO - Best  Precision: 0.8250825, Recall: 0.8361204, F1: 0.8305648
+INFO:my_logger:Best  Precision: 0.8250825, Recall: 0.8361204, F1: 0.8305648
+2023-12-20 18:47:47,976 - INFO - episode_1 Task: wdc_SchemaEnr_PromptEM f1-score: 0.8305647840531561, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_1 Task: wdc_SchemaEnr_PromptEM f1-score: 0.8305647840531561, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-20 18:50:09,380 - INFO - Best  Precision: 0.8213166, Recall: 0.8762542, F1: 0.8478964
+INFO:my_logger:Best  Precision: 0.8213166, Recall: 0.8762542, F1: 0.8478964
+2023-12-20 18:50:09,381 - INFO - episode_2 Task: wdc_SchemaEnr_PromptEM f1-score: 0.8478964401294499, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_2 Task: wdc_SchemaEnr_PromptEM f1-score: 0.8478964401294499, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-20 18:52:30,964 - INFO - Best  Precision: 0.8078292, Recall: 0.7591973, F1: 0.7827586
+INFO:my_logger:Best  Precision: 0.8078292, Recall: 0.7591973, F1: 0.7827586
+2023-12-20 18:52:30,965 - INFO - episode_3 Task: wdc_SchemaEnr_PromptEM f1-score: 0.7827586206896551, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 573, 574]
+INFO:my_logger:episode_3 Task: wdc_SchemaEnr_PromptEM f1-score: 0.7827586206896551, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 573, 574]
+2023-12-20 18:54:51,401 - INFO - Best  Precision: 0.8322148, Recall: 0.8294314, F1: 0.8308208
+INFO:my_logger:Best  Precision: 0.8322148, Recall: 0.8294314, F1: 0.8308208
+2023-12-20 18:54:51,402 - INFO - episode_4 Task: wdc_SchemaEnr_PromptEM f1-score: 0.830820770519263, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_4 Task: wdc_SchemaEnr_PromptEM f1-score: 0.830820770519263, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+DEBUG:filelock:Attempting to acquire lock 140161743254288 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140161743254288 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140161743254288 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140161743254288 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140161743254288 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140161743254288 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140161743254288 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140161743254288 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

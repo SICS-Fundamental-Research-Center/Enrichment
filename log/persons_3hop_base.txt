@@ -1,0 +1,127 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (4): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (5): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (6): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (7): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (8): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (9): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (10): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (11): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (12): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (13): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (14): huggingface.co:443
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmp7nt6ocg_
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmp7nt6ocg_/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (15): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (16): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (17): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (18): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (19): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:filelock:Attempting to acquire lock 140474074869824 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140474074869824 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140474074869824 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140474074869824 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140474076782208 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140474076782208 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140474076782208 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140474076782208 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+WARNING:huggingface_hub.utils._http:'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /roberta-base/resolve/main/tokenizer_config.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f275d0fbbe0>, 'Connection to huggingface.co timed out. (connect timeout=10)'))"), '(Request ID: 4e927ebc-13a8-41a5-9f81-75bfe369f839)')' thrown while requesting HEAD https://huggingface.co/roberta-base/resolve/main/tokenizer_config.json
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (4): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (5): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (6): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (7): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (8): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (9): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (10): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (11): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (12): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (13): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (14): huggingface.co:443
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmpgvov1zpd
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmpgvov1zpd/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (15): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (16): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (17): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (18): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (19): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:filelock:Attempting to acquire lock 139811539378240 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811539378240 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139811539378240 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811539378240 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139811541290624 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811541290624 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139811541290624 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811541290624 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (4): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (5): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (6): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (7): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (8): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (9): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (10): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (11): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (12): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (13): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (14): huggingface.co:443
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmpkxon24fk
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmpkxon24fk/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (15): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (16): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (17): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (18): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (19): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:filelock:Attempting to acquire lock 140318864986176 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140318864986176 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140318864986176 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140318864986176 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140318866898560 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140318866898560 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140318866898560 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140318866898560 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (2): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (3): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (4): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (5): huggingface.co:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (6): huggingface.co:443
+WARNING:huggingface_hub.utils._http:'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 17d9e830-9d98-4ac0-8fc5-079c5baa9431)')' thrown while requesting HEAD https://huggingface.co/roberta-base/resolve/main/config.json
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (7): huggingface.co:443
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmpuz9wvz4w
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmpuz9wvz4w/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-18 18:55:26,078 - INFO - episode_0 Task: persons_3hop_base f1-score: 0.6274921301154249, path: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+INFO:my_logger:episode_0 Task: persons_3hop_base f1-score: 0.6274921301154249, path: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+DEBUG:filelock:Attempting to acquire lock 140035378249792 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140035378249792 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140035378249792 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140035378249792 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140035380162176 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140035380162176 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140035380162176 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140035380162176 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

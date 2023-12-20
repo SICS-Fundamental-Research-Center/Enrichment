@@ -1,0 +1,28 @@
+2023-12-19 21:50:03,673 - INFO - Best  Precision: 0.8209877, Recall: 0.7823529, F1: 0.8012048
+INFO:my_logger:Best  Precision: 0.8209877, Recall: 0.7823529, F1: 0.8012048
+2023-12-19 21:50:03,675 - INFO - episode_0 Task: persons_AutoFeature_PromptEM f1-score: 0.8012048192771084, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 1381, 1382]
+INFO:my_logger:episode_0 Task: persons_AutoFeature_PromptEM f1-score: 0.8012048192771084, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 1381, 1382]
+2023-12-19 22:07:58,187 - INFO - Best  Precision: 0.7504990, Recall: 0.7372549, F1: 0.7438180
+INFO:my_logger:Best  Precision: 0.7504990, Recall: 0.7372549, F1: 0.7438180
+2023-12-19 22:07:58,188 - INFO - episode_1 Task: persons_AutoFeature_PromptEM f1-score: 0.7438180019782394, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 621, 622, 629, 630]
+INFO:my_logger:episode_1 Task: persons_AutoFeature_PromptEM f1-score: 0.7438180019782394, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 621, 622, 629, 630]
+2023-12-19 22:25:52,528 - INFO - Best  Precision: 0.9251012, Recall: 0.8960784, F1: 0.9103586
+INFO:my_logger:Best  Precision: 0.9251012, Recall: 0.8960784, F1: 0.9103586
+2023-12-19 22:25:52,530 - INFO - episode_2 Task: persons_AutoFeature_PromptEM f1-score: 0.9103585657370519, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 487, 488]
+INFO:my_logger:episode_2 Task: persons_AutoFeature_PromptEM f1-score: 0.9103585657370519, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 487, 488]
+2023-12-19 22:44:29,699 - INFO - Best  Precision: 0.7797357, Recall: 0.6941176, F1: 0.7344398
+INFO:my_logger:Best  Precision: 0.7797357, Recall: 0.6941176, F1: 0.7344398
+2023-12-19 22:44:29,700 - INFO - episode_3 Task: persons_AutoFeature_PromptEM f1-score: 0.7344398340248962, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 633, 634]
+INFO:my_logger:episode_3 Task: persons_AutoFeature_PromptEM f1-score: 0.7344398340248962, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 633, 634]
+2023-12-19 23:02:35,090 - INFO - Best  Precision: 0.8600823, Recall: 0.8196078, F1: 0.8393574
+INFO:my_logger:Best  Precision: 0.8600823, Recall: 0.8196078, F1: 0.8393574
+2023-12-19 23:02:35,090 - INFO - episode_4 Task: persons_AutoFeature_PromptEM f1-score: 0.8393574297188755, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 1315, 1316, 1331, 1332]
+INFO:my_logger:episode_4 Task: persons_AutoFeature_PromptEM f1-score: 0.8393574297188755, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 1315, 1316, 1331, 1332]
+DEBUG:filelock:Attempting to acquire lock 139859073108384 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139859073108384 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139859073108384 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139859073108384 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139859073108384 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139859073108384 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139859073108384 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139859073108384 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

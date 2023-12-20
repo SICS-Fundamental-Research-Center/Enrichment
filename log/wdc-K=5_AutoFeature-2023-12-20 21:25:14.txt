@@ -1,0 +1,34 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmp7zn67zuh
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmp7zn67zuh/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-20 21:26:14,216 - INFO - episode_0 Task: wdc-K=5_AutoFeature f1-score: 0.7333333333333334, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 383, 384]
+INFO:my_logger:episode_0 Task: wdc-K=5_AutoFeature f1-score: 0.7333333333333334, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 383, 384]
+2023-12-20 21:27:09,628 - INFO - episode_1 Task: wdc-K=5_AutoFeature f1-score: 0.7419354838709677, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 27, 28]
+INFO:my_logger:episode_1 Task: wdc-K=5_AutoFeature f1-score: 0.7419354838709677, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 27, 28]
+2023-12-20 21:28:04,730 - INFO - episode_2 Task: wdc-K=5_AutoFeature f1-score: 0.6425, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_2 Task: wdc-K=5_AutoFeature f1-score: 0.6425, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-20 21:29:02,728 - INFO - episode_3 Task: wdc-K=5_AutoFeature f1-score: 0.7058823529411765, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 475, 476]
+INFO:my_logger:episode_3 Task: wdc-K=5_AutoFeature f1-score: 0.7058823529411765, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 475, 476]
+2023-12-20 21:29:59,521 - INFO - episode_4 Task: wdc-K=5_AutoFeature f1-score: 0.6587537091988129, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 219, 220]
+INFO:my_logger:episode_4 Task: wdc-K=5_AutoFeature f1-score: 0.6587537091988129, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 219, 220]
+2023-12-20 21:30:56,533 - INFO - episode_5 Task: wdc-K=5_AutoFeature f1-score: 0.8184713375796179, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_5 Task: wdc-K=5_AutoFeature f1-score: 0.8184713375796179, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-20 21:31:55,704 - INFO - episode_6 Task: wdc-K=5_AutoFeature f1-score: 0.7599364069952306, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 95, 96]
+INFO:my_logger:episode_6 Task: wdc-K=5_AutoFeature f1-score: 0.7599364069952306, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 95, 96]
+2023-12-20 21:32:57,413 - INFO - episode_7 Task: wdc-K=5_AutoFeature f1-score: 0.5892018779342723, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 407, 408]
+INFO:my_logger:episode_7 Task: wdc-K=5_AutoFeature f1-score: 0.5892018779342723, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 407, 408]
+2023-12-20 21:33:55,629 - INFO - episode_8 Task: wdc-K=5_AutoFeature f1-score: 0.7146892655367233, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 219, 220]
+INFO:my_logger:episode_8 Task: wdc-K=5_AutoFeature f1-score: 0.7146892655367233, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 219, 220]
+2023-12-20 21:34:51,238 - INFO - episode_9 Task: wdc-K=5_AutoFeature f1-score: 0.7884322678843226, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_9 Task: wdc-K=5_AutoFeature f1-score: 0.7884322678843226, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+DEBUG:filelock:Attempting to acquire lock 139811118005264 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811118005264 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139811118005264 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811118005264 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139811118005264 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811118005264 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139811118005264 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139811118005264 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

@@ -1,0 +1,24 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmppmag60w0
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmppmag60w0/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+INFO:my_logger:episode_0 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8614718614718615, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12]
+INFO:my_logger:episode_1 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8602620087336245, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12]
+INFO:my_logger:episode_2 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8533333333333333, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 683, 684]
+INFO:my_logger:episode_3 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8395604395604396, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 31, 32, 59, 60, 75, 76, 347, 348]
+INFO:my_logger:episode_4 Task: amazon_google_3hop_SchemaEnr f1-score: 0.7740492170022372, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18, 429, 430, 487, 488, 735, 736]
+INFO:my_logger:episode_5 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8352144469525958, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 695, 696, 851, 852, 895, 896]
+INFO:my_logger:episode_6 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8528138528138528, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 389, 390, 683, 684, 717, 718]
+INFO:my_logger:episode_7 Task: amazon_google_3hop_SchemaEnr f1-score: 0.7793427230046949, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 47, 48, 567, 568, 695, 696, 755, 756]
+INFO:my_logger:episode_8 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8596491228070176, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 397, 398, 429, 430, 507, 508, 761, 762]
+INFO:my_logger:episode_9 Task: amazon_google_3hop_SchemaEnr f1-score: 0.8602620087336245, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12]
+DEBUG:filelock:Attempting to acquire lock 139960336166048 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139960336166048 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139960336166048 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139960336166048 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139960338108032 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139960338108032 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139960338108032 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139960338108032 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

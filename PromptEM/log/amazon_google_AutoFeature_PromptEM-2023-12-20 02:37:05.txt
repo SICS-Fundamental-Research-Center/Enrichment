@@ -1,0 +1,28 @@
+2023-12-20 02:44:10,240 - INFO - Best  Precision: 0.7228464, Recall: 0.8247863, F1: 0.7704591
+INFO:my_logger:Best  Precision: 0.7228464, Recall: 0.8247863, F1: 0.7704591
+2023-12-20 02:44:10,241 - INFO - episode_0 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.7704590818363274, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18]
+INFO:my_logger:episode_0 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.7704590818363274, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18]
+2023-12-20 02:51:17,985 - INFO - Best  Precision: 0.8043478, Recall: 0.7905983, F1: 0.7974138
+INFO:my_logger:Best  Precision: 0.8043478, Recall: 0.7905983, F1: 0.7974138
+2023-12-20 02:51:17,987 - INFO - episode_1 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.7974137931034484, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18]
+INFO:my_logger:episode_1 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.7974137931034484, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18]
+2023-12-20 02:58:26,386 - INFO - Best  Precision: 0.7500000, Recall: 0.7820513, F1: 0.7656904
+INFO:my_logger:Best  Precision: 0.7500000, Recall: 0.7820513, F1: 0.7656904
+2023-12-20 02:58:26,388 - INFO - episode_2 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.7656903765690377, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 259, 260]
+INFO:my_logger:episode_2 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.7656903765690377, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 259, 260]
+2023-12-20 03:05:37,736 - INFO - Best  Precision: 0.6666667, Recall: 0.8888889, F1: 0.7619048
+INFO:my_logger:Best  Precision: 0.6666667, Recall: 0.8888889, F1: 0.7619048
+2023-12-20 03:05:37,738 - INFO - episode_3 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.761904761904762, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 327, 328]
+INFO:my_logger:episode_3 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.761904761904762, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 327, 328]
+2023-12-20 03:12:47,602 - INFO - Best  Precision: 0.7974684, Recall: 0.8076923, F1: 0.8025478
+INFO:my_logger:Best  Precision: 0.7974684, Recall: 0.8076923, F1: 0.8025478
+2023-12-20 03:12:47,604 - INFO - episode_4 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.802547770700637, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 259, 260]
+INFO:my_logger:episode_4 Task: amazon_google_AutoFeature_PromptEM f1-score: 0.802547770700637, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 259, 260]
+DEBUG:filelock:Attempting to acquire lock 140399416953248 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140399416953248 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140399416953248 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140399416953248 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140399418896000 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140399418896000 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140399418896000 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140399418896000 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
