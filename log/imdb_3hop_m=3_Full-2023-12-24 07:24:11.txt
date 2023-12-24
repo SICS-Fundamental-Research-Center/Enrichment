@@ -1,0 +1,16 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmp_h77an63
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmp_h77an63/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-24 07:49:06,799 - INFO - episode_0 Task: imdb_3hop_m=3_Full f1-score: 0.686, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 49, 50, 83, 84, 17, 18, 67, 68, 47, 48, 101, 102, 79, 80, 19, 20, 37, 38, 143, 144, 53, 54, 119, 120, 85, 86, 123, 124, 115, 116, 51, 52, 153, 154, 99, 100, 137, 138, 43, 44, 111, 112, 135, 136, 165, 166, 59, 60, 163, 164, 151, 152, 109, 110, 167, 168, 161, 162, 69, 70, 139, 140, 97, 98, 147, 148, 35, 36, 87, 88, 61, 62, 55, 56, 159, 160, 15, 16, 11, 12, 89, 90, 9, 10, 65, 66, 171, 172, 25, 26, 155, 156, 141, 142, 21, 22, 81, 82, 117, 118]
+INFO:my_logger:episode_0 Task: imdb_3hop_m=3_Full f1-score: 0.686, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 49, 50, 83, 84, 17, 18, 67, 68, 47, 48, 101, 102, 79, 80, 19, 20, 37, 38, 143, 144, 53, 54, 119, 120, 85, 86, 123, 124, 115, 116, 51, 52, 153, 154, 99, 100, 137, 138, 43, 44, 111, 112, 135, 136, 165, 166, 59, 60, 163, 164, 151, 152, 109, 110, 167, 168, 161, 162, 69, 70, 139, 140, 97, 98, 147, 148, 35, 36, 87, 88, 61, 62, 55, 56, 159, 160, 15, 16, 11, 12, 89, 90, 9, 10, 65, 66, 171, 172, 25, 26, 155, 156, 141, 142, 21, 22, 81, 82, 117, 118]
+DEBUG:filelock:Attempting to acquire lock 139836981570096 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139836981570096 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139836981570096 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139836981570096 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139836983234176 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139836983234176 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139836983234176 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139836983234176 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

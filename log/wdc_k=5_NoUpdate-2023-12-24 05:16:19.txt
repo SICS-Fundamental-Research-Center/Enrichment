@@ -1,0 +1,34 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmpyerwal48
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmpyerwal48/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-24 05:17:16,877 - INFO - episode_0 Task: wdc_k=5_NoUpdate f1-score: 0.8303715670436187, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_0 Task: wdc_k=5_NoUpdate f1-score: 0.8303715670436187, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:18:10,602 - INFO - episode_1 Task: wdc_k=5_NoUpdate f1-score: 0.6854460093896714, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_1 Task: wdc_k=5_NoUpdate f1-score: 0.6854460093896714, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:19:03,649 - INFO - episode_2 Task: wdc_k=5_NoUpdate f1-score: 0.0, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_2 Task: wdc_k=5_NoUpdate f1-score: 0.0, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:19:57,014 - INFO - episode_3 Task: wdc_k=5_NoUpdate f1-score: 0.7993254637436763, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_3 Task: wdc_k=5_NoUpdate f1-score: 0.7993254637436763, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:20:50,988 - INFO - episode_4 Task: wdc_k=5_NoUpdate f1-score: 0.8272425249169434, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_4 Task: wdc_k=5_NoUpdate f1-score: 0.8272425249169434, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:21:45,602 - INFO - episode_5 Task: wdc_k=5_NoUpdate f1-score: 0.7655502392344498, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_5 Task: wdc_k=5_NoUpdate f1-score: 0.7655502392344498, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:22:39,889 - INFO - episode_6 Task: wdc_k=5_NoUpdate f1-score: 0.8083735909822866, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_6 Task: wdc_k=5_NoUpdate f1-score: 0.8083735909822866, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:23:33,531 - INFO - episode_7 Task: wdc_k=5_NoUpdate f1-score: 0.7771084337349398, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_7 Task: wdc_k=5_NoUpdate f1-score: 0.7771084337349398, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:24:27,959 - INFO - episode_8 Task: wdc_k=5_NoUpdate f1-score: 0.8127090301003345, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_8 Task: wdc_k=5_NoUpdate f1-score: 0.8127090301003345, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 05:25:22,004 - INFO - episode_9 Task: wdc_k=5_NoUpdate f1-score: 0.5213270142180094, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_9 Task: wdc_k=5_NoUpdate f1-score: 0.5213270142180094, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+DEBUG:filelock:Attempting to acquire lock 140493809740384 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140493809740384 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140493809740384 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140493809740384 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140493809740384 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140493809740384 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140493809740384 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140493809740384 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

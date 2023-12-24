@@ -14,22 +14,23 @@ from sb3_contrib.ppo_mask import MaskablePPO
 from sklearn.metrics import f1_score
 from stable_baselines3 import DQN
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 parser = argparse.ArgumentParser()
 parser.add_argument("--data_name", type=str,
-                    choices=["persons", "imdb", "amazon-google", "dblp","imdb-1hop","imdb-3hop"], default="persons")
+                    choices=["persons", "imdb", "amazon-google", "dblp","imdb-1hop","imdb-3hop","persons-3hop","amazon-google-3hop","wdc","wdc-K=1","wdc-K=3","wdc-K=5","wdc-K=7","wdc-K=9","persons-1hop"], default="persons")
 parser.add_argument("--model", type=str,
                     choices=["ditto", "ditto-aug"], default="ditto")
-parser.add_argument("--update", action="store_true", default=True)
+parser.add_argument("--update", action="store_true", default=False)
 parser.add_argument("--method", type=str,
                     choices=["SchemaEnr", "AutoFeature"], default="SchemaEnr")
 parser.add_argument("--max_path", type=int, default=5)
 parser.add_argument("--task", type=str,default="persons_SchemaEnr")
-parser.add_argument("--lm", type=str,default="roberta") ## If you have a custom folder, replace with the path
+parser.add_argument("--lm", type=str,default="/home/yanmy/roberta-base") ## If you have a custom folder, replace with the path
 parser.add_argument("--base_model", type=str,default="model/wiki_base/person_enrich/model.pt")
 parser.add_argument("--OneHop", action="store_true", default=False)
 parser.add_argument("--ThreeHop", action="store_true", default=False)
 parser.add_argument("--epoch", type=int, default=5)
+parser.add_argument("--device", type=str, default=0)
 # env_dict = {'persons_SchemaEnr':"Enrich-wiki",
 #             'persons_AutoFeature':"Enrich-wiki-dqn",
 #             'imdb_SchemaEnr':"Enrich-imdb",
@@ -48,7 +49,16 @@ action_space_dict = {'persons':491,
                      'amazon-google':318,
                      'dblp':123,
                      'imdb-1hop':18,
-                     'imdb-3hop':84}
+                     'imdb-3hop':84,
+                     'persons-3hop':768,
+                     'persons-1hop':212,
+                     'amazon-google-3hop':446,
+                     'wdc':285,
+                     "wdc-K=1":285,
+                     'wdc-K=3':285,
+                     'wdc-K=5':285,
+                     'wdc-K=7':285,
+                     'wdc-K=9':285,}
 
 
 
@@ -58,6 +68,8 @@ main_args = parser.parse_args()
 state_path = os.getcwd()
 max_path = main_args.max_path
 task=main_args.task
+print('Update:%s' % main_args.update)
+os.environ["CUDA_VISIBLE_DEVICES"] = "%s" % main_args.device
 # env_choose = env_dict['%s_%s' % (main_args.data_name,main_args.method)]
 # if(main_args.OneHop):
 #     env_choose = env_dict['%s_%s_1hop' % (main_args.data_name,main_args.method)]
@@ -349,6 +361,231 @@ elif(main_args.data_name=='imdb-3hop'):
                     relations = path_str.split('_')
                     relation = '%s_%s_%s' % (relations[0],relations[1],relations[2])
                     ent_2_text += 'COL %s VAL %s ' % (relation,col)
+        return ent_1_text,ent_2_text,row['label']
+elif(main_args.data_name=='persons-3hop'):
+    mask_array = np.load('data/person-3hop/wiki_mask.npy')
+    mutual_info = np.load('data/person-3hop/mutual_info_norm.npy')
+    mutual_info = np.mean(mutual_info,axis=0)
+    relation_dict = np.load('relation_dict.npy',allow_pickle=True).item()
+    enrich_train = pd.read_csv('data/person-3hop/enrich_3hop_train.csv',index_col=0).fillna('')
+    enrich_valid = pd.read_csv('data/person-3hop/enrich_3hop_valid.csv',index_col=0).fillna('')
+    enrich_test = pd.read_csv('data/person-3hop/enrich_3hop_test.csv',index_col=0).fillna('')
+    def ditto_transfer_extend(row):
+        ent_1 = row[1:4]
+        ent_1_text = ''
+        for index,col in ent_1.iteritems():
+            ent_1_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        ent_2 = row[5:8]
+        ent_2_text = ''
+        for index,col in ent_2.iteritems():
+            ent_2_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        for index,col in row[9:].iteritems():
+            if(index.__contains__('_a')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                else: ## 2-hop
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col) 
+            elif(index.__contains__('_b')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                else:
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col) 
+        return ent_1_text,ent_2_text,row['label']
+elif(main_args.data_name=='persons-1hop'):
+    mask_array = np.load('data/person-3hop/wiki_mask.npy')[:212]
+    mutual_info = np.load('data/person-3hop/mutual_info_norm.npy')
+    mutual_info = np.mean(mutual_info,axis=0)[:212]
+    relation_dict = np.load('relation_dict.npy',allow_pickle=True).item()
+    enrich_train = pd.read_csv('data/person-3hop/enrich_3hop_train.csv',index_col=0).fillna('').iloc[:,:433]
+    enrich_valid = pd.read_csv('data/person-3hop/enrich_3hop_valid.csv',index_col=0).fillna('').iloc[:,:433]
+    enrich_test = pd.read_csv('data/person-3hop/enrich_3hop_test.csv',index_col=0).fillna('').iloc[:,:433]
+    def ditto_transfer_extend(row):
+        ent_1 = row[1:4]
+        ent_1_text = ''
+        for index,col in ent_1.iteritems():
+            ent_1_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        ent_2 = row[5:8]
+        ent_2_text = ''
+        for index,col in ent_2.iteritems():
+            ent_2_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        for index,col in row[9:].iteritems():
+            if(index.__contains__('_a')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                else: ## 2-hop
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col) 
+            elif(index.__contains__('_b')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                else:
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col) 
+        return ent_1_text,ent_2_text,row['label']
+elif(main_args.data_name=='amazon-google-3hop'):
+    mask_array = np.load('data/amazon-google-3hop/amazon_mask.npy')
+    mutual_info = np.load('data/amazon-google-3hop/mutual_info_norm.npy')
+    mutual_info = np.mean(mutual_info,axis=0)
+    relation_dict = np.load('relation_dict.npy',allow_pickle=True).item()
+    enrich_train = pd.read_csv('data/amazon-google-3hop/train.csv',index_col=0).fillna('')
+    enrich_valid = pd.read_csv('data/amazon-google-3hop/valid.csv',index_col=0).fillna('')
+    enrich_test = pd.read_csv('data/amazon-google-3hop/test.csv',index_col=0).fillna('')
+    def ditto_transfer_extend(row):
+        ent_1 = row[1:4]
+        ent_1_text = ''
+        for index,col in ent_1.iteritems():
+            ent_1_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        ent_2 = row[5:8]
+        ent_2_text = ''
+        for index,col in ent_2.iteritems():
+            ent_2_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        for index,col in row[9:].iteritems():
+            if(index.__contains__('_a')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                else: ## 2-hop
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col) 
+            elif(index.__contains__('_b')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                else:
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col) 
+        return ent_1_text,ent_2_text,row['label']
+elif(main_args.data_name=='wdc'):
+    mask_array = np.load('data/wdc-shoes/wdc_mask.npy')
+    mutual_info = np.load('data/wdc-shoes/wdc_mutual_info_norm.npy')
+    mutual_info = np.mean(mutual_info,axis=0)
+    relation_dict = np.load('relation_dict.npy',allow_pickle=True).item()
+    enrich_train = pd.read_csv('data/wdc-shoes/train.csv',index_col=0).fillna('')
+    enrich_valid = pd.read_csv('data/wdc-shoes/valid.csv',index_col=0).fillna('')
+    enrich_test = pd.read_csv('data/wdc-shoes/test.csv',index_col=0).fillna('')
+    def ditto_transfer_extend(row):
+        ent_1 = row[1:4]
+        ent_1_text = ''
+        for index,col in ent_1.iteritems():
+            ent_1_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        ent_2 = row[5:8]
+        ent_2_text = ''
+        for index,col in ent_2.iteritems():
+            ent_2_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        for index,col in row[9:].iteritems():
+            if(index.__contains__('_a')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                else: ## 2-hop
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col) 
+            elif(index.__contains__('_b')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                else:
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col) 
+        return ent_1_text,ent_2_text,row['label']
+elif(main_args.data_name.__contains__('wdc-')):
+    mask_array = np.load('data/%s/wdc_mask.npy' % main_args.data_name)
+    mutual_info = np.load('data/%s/wdc_mutual_info_norm.npy'% main_args.data_name)
+    mutual_info = np.mean(mutual_info,axis=0)
+    relation_dict = np.load('relation_dict.npy',allow_pickle=True).item()
+    enrich_train = pd.read_csv('data/%s/train.csv'% main_args.data_name,index_col=0).fillna('')
+    enrich_valid = pd.read_csv('data/%s/valid.csv'% main_args.data_name,index_col=0).fillna('')
+    enrich_test = pd.read_csv('data/%s/test.csv'% main_args.data_name,index_col=0).fillna('')
+    def ditto_transfer_extend(row):
+        ent_1 = row[1:4]
+        ent_1_text = ''
+        for index,col in ent_1.iteritems():
+            ent_1_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        ent_2 = row[5:8]
+        ent_2_text = ''
+        for index,col in ent_2.iteritems():
+            ent_2_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+        for index,col in row[9:].iteritems():
+            if(index.__contains__('_a')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                else: ## 2-hop
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_1_text += 'COL %s VAL %s ' % (relation,col) 
+            elif(index.__contains__('_b')):
+                path_str = index[:-2]
+                if(not path_str.__contains__('_')):
+                    relation = relation_dict[int(index[:-2])] 
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                elif(path_str.count('_')==1):
+                    relations = path_str.split('_')
+                    relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                else:
+                    relations = path_str.split('_')
+                    relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                    ent_2_text += 'COL %s VAL %s ' % (relation,col) 
         return ent_1_text,ent_2_text,row['label']
 hp_simple = SimpleNamespace(task=main_args.task,
                      batch_size=128,

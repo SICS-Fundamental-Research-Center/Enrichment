@@ -1,0 +1,24 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmp9yb7ryrt
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmp9yb7ryrt/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-24 14:17:46,274 - INFO - episode_0 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8214849921011058, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 217, 218]
+INFO:my_logger:episode_0 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8214849921011058, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 217, 218]
+2023-12-24 14:19:54,306 - INFO - episode_1 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8376811594202899, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_1 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8376811594202899, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 14:22:10,292 - INFO - episode_2 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8051948051948052, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 95, 96]
+INFO:my_logger:episode_2 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8051948051948052, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 95, 96]
+2023-12-24 14:24:18,356 - INFO - episode_3 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.5857142857142857, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_3 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.5857142857142857, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 14:26:27,699 - INFO - episode_4 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8937500000000002, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_4 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8937500000000002, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 14:28:37,070 - INFO - episode_5 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8175182481751825, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_5 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8175182481751825, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 14:30:52,198 - INFO - episode_6 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.465564738292011, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 219, 220]
+INFO:my_logger:episode_6 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.465564738292011, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 219, 220]
+2023-12-24 14:33:01,666 - INFO - episode_7 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8172043010752689, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_7 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8172043010752689, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 14:35:10,736 - INFO - episode_8 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.7327044025157232, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+INFO:my_logger:episode_8 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.7327044025157232, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
