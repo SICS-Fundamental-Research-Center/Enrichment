@@ -1,0 +1,34 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmph2hja6lt
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmph2hja6lt/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-24 15:34:31,561 - INFO - episode_0 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7688984881209503, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 267, 268]
+INFO:my_logger:episode_0 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7688984881209503, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 267, 268]
+2023-12-24 15:39:26,122 - INFO - episode_1 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7991071428571429, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 341, 342, 427, 428, 587, 588, 659, 660]
+INFO:my_logger:episode_1 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7991071428571429, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 341, 342, 427, 428, 587, 588, 659, 660]
+2023-12-24 15:44:32,461 - INFO - episode_2 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7829977628635346, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 231, 232, 355, 356, 411, 412, 487, 488, 839, 840]
+INFO:my_logger:episode_2 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7829977628635346, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 231, 232, 355, 356, 411, 412, 487, 488, 839, 840]
+2023-12-24 15:49:07,517 - INFO - episode_3 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7780320366132722, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 247, 248, 287, 288, 307, 308]
+INFO:my_logger:episode_3 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7780320366132722, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 247, 248, 287, 288, 307, 308]
+2023-12-24 15:53:51,049 - INFO - episode_4 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7716186252771619, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 303, 304, 343, 344, 467, 468]
+INFO:my_logger:episode_4 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7716186252771619, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 303, 304, 343, 344, 467, 468]
+2023-12-24 15:58:32,892 - INFO - episode_5 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7899543378995434, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 29, 30, 51, 52, 355, 356, 407, 408]
+INFO:my_logger:episode_5 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7899543378995434, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 29, 30, 51, 52, 355, 356, 407, 408]
+2023-12-24 16:02:39,058 - INFO - episode_6 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.815489749430524, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 73, 74]
+INFO:my_logger:episode_6 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.815489749430524, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 73, 74]
+2023-12-24 16:06:31,182 - INFO - episode_7 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7737556561085972, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 415, 416]
+INFO:my_logger:episode_7 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7737556561085972, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 415, 416]
+2023-12-24 16:11:39,536 - INFO - episode_8 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7668845315904138, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 307, 308, 347, 348, 779, 780, 883, 884]
+INFO:my_logger:episode_8 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7668845315904138, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 307, 308, 347, 348, 779, 780, 883, 884]
+2023-12-24 16:16:10,048 - INFO - episode_9 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7657657657657657, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 247, 248, 755, 756]
+INFO:my_logger:episode_9 Task: amazon_google_3hop_SchemaEnr_NoUpdate f1-score: 0.7657657657657657, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 247, 248, 755, 756]
+DEBUG:filelock:Attempting to acquire lock 139864015059552 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139864015059552 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139864015059552 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139864015059552 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139864015059552 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139864015059552 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139864015059552 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139864015059552 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

@@ -1,0 +1,12 @@
+2023-12-24 20:28:18,941 - INFO - Best  Precision: 0.7314050, Recall: 0.7564103, F1: 0.7436975
+INFO:my_logger:Best  Precision: 0.7314050, Recall: 0.7564103, F1: 0.7436975
+2023-12-24 20:28:18,942 - INFO - episode_0 Task: amazon-google-3hop-Random f1-score: 0.7436974789915966, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 521, 522, 859, 860, 461, 462, 185, 186, 753, 754]
+INFO:my_logger:episode_0 Task: amazon-google-3hop-Random f1-score: 0.7436974789915966, path [0, 1, 2, 3, 4, 5, 6, 7, 8, 521, 522, 859, 860, 461, 462, 185, 186, 753, 754]
+DEBUG:filelock:Attempting to acquire lock 140359995011808 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140359995011808 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140359995011808 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140359995011808 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140359996632704 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140359996632704 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140359996632704 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140359996632704 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

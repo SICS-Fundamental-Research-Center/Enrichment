@@ -4,3 +4,13 @@ DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universa
 DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
 DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
 DEBUG:wandb.docker.auth:No config file found
+2023-12-24 14:38:35,134 - INFO - episode_0 Task: imdb_3hop_MI f1-score: 0.6937354988399071, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 37, 38, 85, 86, 93, 94, 9, 10, 45, 46]
+INFO:my_logger:episode_0 Task: imdb_3hop_MI f1-score: 0.6937354988399071, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 37, 38, 85, 86, 93, 94, 9, 10, 45, 46]
+DEBUG:filelock:Attempting to acquire lock 139806180665952 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139806180665952 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139806180665952 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139806180665952 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139806180665952 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139806180665952 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139806180665952 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139806180665952 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

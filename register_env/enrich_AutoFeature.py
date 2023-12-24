@@ -255,13 +255,89 @@ def get_reward(test_data,cols,relation_dict,model_output,epoch,mutual_info,da,lm
                         relation = '%s_%s_%s' % (relations[0],relations[1],relations[2])
                         ent_2_text += 'COL %s VAL %s ' % (relation,col)
             return ent_1_text,ent_2_text,row['label']
+    elif(data_name.__contains__('persons')):
+        def ditto_transfer_extend(row):
+            ent_1 = row[1:4]
+            ent_1_text = ''
+            for index,col in ent_1.iteritems():
+                ent_1_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+            ent_2 = row[5:8]
+            ent_2_text = ''
+            for index,col in ent_2.iteritems():
+                ent_2_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+            for index,col in row[9:].iteritems():
+                if(index.__contains__('_a')):
+                    path_str = index[:-2]
+                    if(not path_str.__contains__('_')):
+                        relation = relation_dict[int(index[:-2])] 
+                        ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                    elif(path_str.count('_')==1):
+                        relations = path_str.split('_')
+                        relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                        ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                    else: ## 2-hop
+                        relations = path_str.split('_')
+                        relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                        ent_1_text += 'COL %s VAL %s ' % (relation,col) 
+                elif(index.__contains__('_b')):
+                    path_str = index[:-2]
+                    if(not path_str.__contains__('_')):
+                        relation = relation_dict[int(index[:-2])] 
+                        ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                    elif(path_str.count('_')==1):
+                        relations = path_str.split('_')
+                        relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                        ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                    else:
+                        relations = path_str.split('_')
+                        relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                        ent_2_text += 'COL %s VAL %s ' % (relation,col) 
+            return ent_1_text,ent_2_text,row['label']
+    elif(data_name=='amazon-google-3hop' or data_name.__contains__('wdc')):
+        def ditto_transfer_extend(row):
+            ent_1 = row[1:4]
+            ent_1_text = ''
+            for index,col in ent_1.iteritems():
+                ent_1_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+            ent_2 = row[5:8]
+            ent_2_text = ''
+            for index,col in ent_2.iteritems():
+                ent_2_text += 'COL %s VAL %s ' % (index.replace('_a','').replace('_b',''),col)
+            for index,col in row[9:].iteritems():
+                if(index.__contains__('_a')):
+                    path_str = index[:-2]
+                    if(not path_str.__contains__('_')):
+                        relation = relation_dict[int(index[:-2])] 
+                        ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                    elif(path_str.count('_')==1):
+                        relations = path_str.split('_')
+                        relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                        ent_1_text += 'COL %s VAL %s ' % (relation,col)
+                    else: ## 2-hop
+                        relations = path_str.split('_')
+                        relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                        ent_1_text += 'COL %s VAL %s ' % (relation,col) 
+                elif(index.__contains__('_b')):
+                    path_str = index[:-2]
+                    if(not path_str.__contains__('_')):
+                        relation = relation_dict[int(index[:-2])] 
+                        ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                    elif(path_str.count('_')==1):
+                        relations = path_str.split('_')
+                        relation = '%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])])
+                        ent_2_text += 'COL %s VAL %s ' % (relation,col)
+                    else:
+                        relations = path_str.split('_')
+                        relation = '%s_%s_%s' % (relation_dict[int(relations[0])],relation_dict[int(relations[1])],relation_dict[int(relations[2])])
+                        ent_2_text += 'COL %s VAL %s ' % (relation,col) 
+            return ent_1_text,ent_2_text,row['label']
     mutual_info_index = np.where(np.array(cols) == 1)[0]
-    if(mutual_info_index!=[]):
+    if(len(mutual_info_index)>0):
         mutual_info_score = np.mean(mutual_info[mutual_info_index])
     else:
         mutual_info_score = np.mean(mutual_info)
     cols = find_indexes(cols)
-    random_numbers = np.random.choice(len(test_data), 1024, replace=False)
+    random_numbers = np.random.choice(len(test_data), 128, replace=False)
     features = RL_feature_selection(cols)
 
 

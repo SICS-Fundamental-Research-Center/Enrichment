@@ -8,3 +8,27 @@ DEBUG:wandb.docker.auth:No config file found
 INFO:my_logger:episode_0 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7761806981519508, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 259, 260]
 2023-12-24 14:32:12,674 - INFO - episode_1 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7999999999999999, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 415, 416]
 INFO:my_logger:episode_1 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7999999999999999, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 415, 416]
+2023-12-24 14:38:37,056 - INFO - episode_2 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7893660531697341, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 229, 230]
+INFO:my_logger:episode_2 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7893660531697341, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 229, 230]
+2023-12-24 14:46:17,740 - INFO - episode_3 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.8235294117647058, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 779, 780]
+INFO:my_logger:episode_3 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.8235294117647058, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 23, 24, 779, 780]
+2023-12-24 14:54:13,783 - INFO - episode_4 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.8362831858407079, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 47, 48, 779, 780, 851, 852]
+INFO:my_logger:episode_4 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.8362831858407079, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 47, 48, 779, 780, 851, 852]
+2023-12-24 15:02:34,843 - INFO - episode_5 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7395348837209301, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 235, 236, 237, 238, 345, 346, 429, 430, 735, 736]
+INFO:my_logger:episode_5 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7395348837209301, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 235, 236, 237, 238, 345, 346, 429, 430, 735, 736]
+2023-12-24 15:09:45,626 - INFO - episode_6 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.810924369747899, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 227, 228, 349, 350]
+INFO:my_logger:episode_6 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.810924369747899, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 227, 228, 349, 350]
+2023-12-24 15:17:28,911 - INFO - episode_7 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7889908256880734, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18, 389, 390, 391, 392, 405, 406]
+INFO:my_logger:episode_7 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7889908256880734, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18, 389, 390, 391, 392, 405, 406]
+2023-12-24 15:23:43,319 - INFO - episode_8 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7586206896551725, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 225, 226]
+INFO:my_logger:episode_8 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7586206896551725, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 225, 226]
+2023-12-24 15:30:31,071 - INFO - episode_9 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7575757575757576, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 871, 872]
+INFO:my_logger:episode_9 Task: amazon_google_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7575757575757576, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 871, 872]
+DEBUG:filelock:Attempting to acquire lock 140163282725472 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140163282725472 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140163282725472 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140163282725472 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140163282725472 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140163282725472 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140163282725472 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140163282725472 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

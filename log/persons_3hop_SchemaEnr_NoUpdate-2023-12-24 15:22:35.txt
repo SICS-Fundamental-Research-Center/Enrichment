@@ -1,0 +1,34 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmptwflj_1j
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmptwflj_1j/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-24 15:26:33,567 - INFO - episode_0 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7512794268167861, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 27, 28]
+INFO:my_logger:episode_0 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7512794268167861, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 27, 28]
+2023-12-24 15:31:11,629 - INFO - episode_1 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7191235059760956, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1539, 1540]
+INFO:my_logger:episode_1 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7191235059760956, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1539, 1540]
+2023-12-24 15:36:47,339 - INFO - episode_2 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.761025641025641, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 697, 698, 1461, 1462]
+INFO:my_logger:episode_2 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.761025641025641, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 697, 698, 1461, 1462]
+2023-12-24 15:41:14,841 - INFO - episode_3 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7481559536354058, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 609, 610]
+INFO:my_logger:episode_3 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7481559536354058, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 609, 610]
+2023-12-24 15:47:18,705 - INFO - episode_4 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7251687560270011, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 647, 648, 1059, 1060]
+INFO:my_logger:episode_4 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7251687560270011, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 647, 648, 1059, 1060]
+2023-12-24 15:52:23,709 - INFO - episode_5 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7687916270218839, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1045, 1046]
+INFO:my_logger:episode_5 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7687916270218839, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1045, 1046]
+2023-12-24 15:58:11,656 - INFO - episode_6 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.8412698412698413, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1049, 1050, 1077, 1078]
+INFO:my_logger:episode_6 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.8412698412698413, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1049, 1050, 1077, 1078]
+2023-12-24 16:03:33,188 - INFO - episode_7 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7638483965014577, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 593, 594, 1375, 1376]
+INFO:my_logger:episode_7 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7638483965014577, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 593, 594, 1375, 1376]
+2023-12-24 16:09:14,569 - INFO - episode_8 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7552986512524084, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 591, 592, 1539, 1540]
+INFO:my_logger:episode_8 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.7552986512524084, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 591, 592, 1539, 1540]
+2023-12-24 16:14:28,234 - INFO - episode_9 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.6436058700209644, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 695, 696, 1047, 1048]
+INFO:my_logger:episode_9 Task: persons_3hop_SchemaEnr_NoUpdate f1-score: 0.6436058700209644, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 695, 696, 1047, 1048]
+DEBUG:filelock:Attempting to acquire lock 140282594130528 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140282594130528 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140282594130528 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140282594130528 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140282594130528 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140282594130528 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140282594130528 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140282594130528 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

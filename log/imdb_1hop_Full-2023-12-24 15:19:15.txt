@@ -1,0 +1,16 @@
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmpft8935oc
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmpft8935oc/_remote_module_non_scriptable.py
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:git.cmd:Popen(['git', 'version'], cwd=/home/yanmy/enrich_release, universal_newlines=False, shell=None, istream=None)
+DEBUG:wandb.docker.auth:Trying paths: ['/home/yanmy/.docker/config.json', '/home/yanmy/.dockercfg']
+DEBUG:wandb.docker.auth:No config file found
+2023-12-24 15:28:07,674 - INFO - episode_0 Task: imdb_1hop_Full f1-score: 0.7898989898989898, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 35, 36, 19, 20, 13, 14, 23, 24, 33, 34, 41, 42, 17, 18, 15, 16, 43, 44, 37, 38, 27, 28, 25, 26, 39, 40, 11, 12, 29, 30, 21, 22, 31, 32, 9, 10]
+INFO:my_logger:episode_0 Task: imdb_1hop_Full f1-score: 0.7898989898989898, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 35, 36, 19, 20, 13, 14, 23, 24, 33, 34, 41, 42, 17, 18, 15, 16, 43, 44, 37, 38, 27, 28, 25, 26, 39, 40, 11, 12, 29, 30, 21, 22, 31, 32, 9, 10]
+DEBUG:filelock:Attempting to acquire lock 139839366937184 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139839366937184 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139839366937184 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 139839366937184 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 139839366937184 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139839366937184 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 139839366937184 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 139839366937184 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

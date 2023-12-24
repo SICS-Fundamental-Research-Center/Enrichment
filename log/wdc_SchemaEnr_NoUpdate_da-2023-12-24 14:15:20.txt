@@ -22,3 +22,13 @@ INFO:my_logger:episode_6 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.46556473829
 INFO:my_logger:episode_7 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.8172043010752689, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
 2023-12-24 14:35:10,736 - INFO - episode_8 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.7327044025157232, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
 INFO:my_logger:episode_8 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.7327044025157232, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30]
+2023-12-24 14:37:32,252 - INFO - episode_9 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.4751381215469613, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 285, 286]
+INFO:my_logger:episode_9 Task: wdc_SchemaEnr_NoUpdate_da f1-score: 0.4751381215469613, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 29, 30, 285, 286]
+DEBUG:filelock:Attempting to acquire lock 140600210848352 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140600210848352 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140600210848352 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140600210848352 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140600210848352 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140600210848352 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140600210848352 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140600210848352 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

@@ -8,3 +8,27 @@ DEBUG:wandb.docker.auth:No config file found
 INFO:my_logger:episode_0 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7132867132867131, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 641, 642]
 2023-12-24 14:31:37,209 - INFO - episode_1 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7809152872444011, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 627, 628, 635, 636, 1077, 1078]
 INFO:my_logger:episode_1 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7809152872444011, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 627, 628, 635, 636, 1077, 1078]
+2023-12-24 14:39:10,242 - INFO - episode_2 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.0, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 635, 636, 691, 692]
+INFO:my_logger:episode_2 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.0, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 635, 636, 691, 692]
+2023-12-24 14:44:15,048 - INFO - episode_3 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7505330490405118, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 27, 28]
+INFO:my_logger:episode_3 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7505330490405118, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 27, 28]
+2023-12-24 14:49:55,663 - INFO - episode_4 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.6434195725534307, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1047, 1048]
+INFO:my_logger:episode_4 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.6434195725534307, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1047, 1048]
+2023-12-24 14:56:02,319 - INFO - episode_5 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7344064386317908, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 613, 614]
+INFO:my_logger:episode_5 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7344064386317908, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 613, 614]
+2023-12-24 15:02:48,659 - INFO - episode_6 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7398963730569947, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1163, 1164]
+INFO:my_logger:episode_6 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7398963730569947, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1163, 1164]
+2023-12-24 15:09:53,003 - INFO - episode_7 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7519379844961239, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 19, 20, 631, 632]
+INFO:my_logger:episode_7 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7519379844961239, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 19, 20, 631, 632]
+2023-12-24 15:16:44,834 - INFO - episode_8 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7148362235067436, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1109, 1110]
+INFO:my_logger:episode_8 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7148362235067436, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1109, 1110]
+2023-12-24 15:22:31,175 - INFO - episode_9 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7654320987654321, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1375, 1376]
+INFO:my_logger:episode_9 Task: persons_3hop_SchemaEnr_NoUpdate_da f1-score: 0.7654320987654321, path: [0, 1, 2, 3, 4, 5, 6, 7, 8, 1375, 1376]
+DEBUG:filelock:Attempting to acquire lock 140681850067552 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140681850067552 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140681850067552 on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 140681850067552 released on /home/yanmy/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 140681850067552 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140681850067552 acquired on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 140681850067552 on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 140681850067552 released on /home/yanmy/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
