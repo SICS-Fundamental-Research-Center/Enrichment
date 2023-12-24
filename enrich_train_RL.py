@@ -29,8 +29,11 @@ parser.add_argument("--lm", type=str,default="/home/yanmy/roberta-base") ## If y
 parser.add_argument("--base_model", type=str,default="model/wiki_base/person_enrich/model.pt")
 parser.add_argument("--OneHop", action="store_true", default=False)
 parser.add_argument("--ThreeHop", action="store_true", default=False)
+parser.add_argument("--VaryDelta", action="store_true", default=False)
+parser.add_argument("--delta", type=int, default=0)
 parser.add_argument("--epoch", type=int, default=5)
 parser.add_argument("--device", type=str, default=0)
+parser.add_argument("--total_timesteps", type=int, default=400)
 # env_dict = {'persons_SchemaEnr':"Enrich-wiki",
 #             'persons_AutoFeature':"Enrich-wiki-dqn",
 #             'imdb_SchemaEnr':"Enrich-imdb",
@@ -601,17 +604,28 @@ hp_simple = SimpleNamespace(task=main_args.task,
 
 ditto_model,ditto_optimizer = load_model_update(main_args.base_model,lm=main_args.lm,lr=hp_simple.lr,use_gpu=True,fp16=True) ## Load Base Model
 for epoch_count in range(10):
-    if(main_args.method=='SchemaEnr'): 
+    if(main_args.method=='SchemaEnr' and not main_args.VaryDelta): 
         env = gymnasium.make('Enrich-SchemaEnr',mask=mask_array,relation_dict=relation_dict,mutual_info=mutual_info,state_path=state_path,test_data=enrich_valid,data_name=main_args.data_name,feature_num=action_space, max_episode_steps=100,device_id=2,epoch=epoch_count,model_input = ditto_model,task=hp_simple.task,max_path = max_path ,lm=main_args.lm)
         env = ActionMasker(env, mask_fn)
         model = MaskablePPO(MaskableActorCriticPolicy, env, verbose=1,n_steps=40,n_epochs=10)
         print('Epoch:%s' % str(epoch_count))
         model.learn(total_timesteps=400,progress_bar=True)
-    elif(main_args.method=='AutoFeature'):
+    elif(main_args.method=='SchemaEnr' and main_args.VaryDelta): 
+        env = gymnasium.make('Enrich-SchemaEnr-VaryDelta',mask=mask_array,relation_dict=relation_dict,mutual_info=mutual_info,state_path=state_path,test_data=enrich_valid,data_name=main_args.data_name,feature_num=action_space, max_episode_steps=100,device_id=2,epoch=epoch_count,model_input = ditto_model,task=hp_simple.task,max_path = max_path ,lm=main_args.lm, delta=main_args.delta)
+        env = ActionMasker(env, mask_fn)
+        model = MaskablePPO(MaskableActorCriticPolicy, env, verbose=1,n_steps=40,n_epochs=10)
+        print('Epoch:%s' % str(epoch_count))
+        model.learn(total_timesteps=main_args.total_timesteps,progress_bar=True)
+    elif(main_args.method=='AutoFeature' and not main_args.VaryDelta):
         env = gymnasium.make('Enrich-AutoFeature',mask=mask_array,relation_dict=relation_dict,mutual_info=mutual_info,state_path=state_path,test_data=enrich_valid,data_name=main_args.data_name,feature_num=action_space, max_episode_steps=100,device_id=2,epoch=epoch_count,model_input = ditto_model,task=hp_simple.task,max_path = max_path ,lm=main_args.lm)
         model = DQN("MlpPolicy", env, verbose=1)
         print('Epoch:%s' % str(epoch_count))
         model.learn(total_timesteps=400,progress_bar=True)
+    elif(main_args.method=='AutoFeature' and main_args.VaryDelta):
+        env = gymnasium.make('Enrich-AutoFeature-VaryDelta',mask=mask_array,relation_dict=relation_dict,mutual_info=mutual_info,state_path=state_path,test_data=enrich_valid,data_name=main_args.data_name,feature_num=action_space, max_episode_steps=100,device_id=2,epoch=epoch_count,model_input = ditto_model,task=hp_simple.task,max_path = max_path ,lm=main_args.lm, delta=main_args.delta)
+        model = DQN("MlpPolicy", env, verbose=1)
+        print('Epoch:%s' % str(epoch_count))
+        model.learn(total_timesteps=main_args.total_timesteps,progress_bar=True)
     if(main_args.update):
         state_memory = np.load('%s/data/state/%s/state_memory_%s.npy' % (state_path,main_args.task,str(epoch_count)))
         reward_memory = np.load('%s/data/state/%s/reward_memory_%s.npy' % (state_path,main_args.task,str(epoch_count)))

@@ -32,12 +32,12 @@ parser.add_argument("--method", type=str,
                     choices=["Base","Random","L2X","SchemaEnr", "AutoFeature", "Full", "MI"], default="SchemaEnr")
 parser.add_argument("--max_path", type=int, default=5)
 parser.add_argument("--task", type=str,default="persons_SchemaEnr")
-parser.add_argument("--lm", type=str,default="roberta") ## If you have a custom folder, replace with the path
+parser.add_argument("--lm", type=str,default="/home/yanmy/roberta-base") ## If you have a custom folder, replace with the path
 parser.add_argument("--base_model", type=str,default="model/wiki_base/person_enrich/model.pt")
 # parser.add_argument("--OneHop", action="store_true", default=False)
 # parser.add_argument("--ThreeHop", action="store_true", default=False)
 parser.add_argument("--save_model", action="store_true", default=False)
-parser.add_argument("--epoch", type=int, default=15)
+parser.add_argument("--epoch", type=int, default=7)
 parser.add_argument("--device", type=str, default=0)
 
 
@@ -63,9 +63,9 @@ max_path = main_args.max_path
 task=main_args.task
 os.environ["CUDA_VISIBLE_DEVICES"] = "%s" % main_args.device
 
-logging.basicConfig(filename='log/%s-%s.txt' % (str(task),str(time_stamp)), level=logging.DEBUG)
+logging.basicConfig(filename='log/%s/%s-%s.txt' % (str(main_args.method),str(task),str(time_stamp)), level=logging.DEBUG)
 logger = logging.getLogger('my_logger')
-file_handler = logging.FileHandler('log/%s-%s.txt' % (str(task),str(time_stamp)))
+file_handler = logging.FileHandler('log/%s/%s-%s.txt' % (str(main_args.method),str(task),str(time_stamp)))
 logger.addHandler(file_handler)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
@@ -605,7 +605,8 @@ hp_simple = SimpleNamespace(task=main_args.task,
                      da=da)
 for epoch_count in episode:
     if(main_args.method=='L2X'):
-        l2x = np.array([56,354,281,90,239]) + 1 ## Toy Example for persons-L2X-m=5, replace [56,354,281,90,239] with L2X result array
+        # l2x = np.array([56,354,281,90,239]) + 1 ## Toy Example for persons-L2X-m=5, replace [56,354,281,90,239] with L2X result array
+        l2x = np.load('data/l2x-similarity/%s_path.npy' % main_args.task) + 1
         feature = (RL_feature_selection(l2x))
     elif(main_args.method=='Base'):
         l2x = []
