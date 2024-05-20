@@ -50,7 +50,20 @@ register(
 ```
 ### Training with Ditto/Ditto-aug
 ```
-python enrich_train_RL.py --data_name amazon-google-3hop --model ditto-aug --method SchemaEnr --max_path 5 --task amazon_google_SchemaEnr_da --lm roberta-base --base_model model_log/imdb_enrich/model.pt --update --VaryDelta --delta 5 --epoch 10 --device 0 --total_timesteps 400
+python enrich_train_RL.py
+    --data_name amazon-google-3hop \
+    --model ditto-aug \
+    --method SchemaEnr \
+    --max_path 5 \
+    --task amazon_google_SchemaEnr_da \
+    --lm roberta-base \
+    --base_model model_log/imdb_enrich/model.pt \
+    --update \
+    --VaryDelta \
+    --delta 5 \
+    --epoch 10 \
+    --device 0 \
+    --total_timesteps 400
 ```
 
 The meaning of the flags:
