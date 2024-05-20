@@ -24,3 +24,6 @@ mv target/mls_server-0.1.1.jar example/lib/
 ## 3. datasets_and_shell
 The directory contains IMDB and Person datasets, and shell scripts to run the experimental settings.
 
+## 4. dataset file
+
+Due to the large size of dataset for BE and IE, please download the Zip file from [link](https://www.dropbox.com/sh/kk84zjrgwa0dikc/AABZ6MueJGc03MsZIbw8k-cra?dl=0) , then replace the BE_and_IE folder with the downloaded version.
