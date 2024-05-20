@@ -77,7 +77,7 @@ The meaning of the flags:
 - `--task`: the name of current task. It will be stored in `data/state` as the memory of RL 
 - `--lm`: the path of the local language model folder(currently support Roberta). The default is Roberta-base, please replace it with your own roberta-base model path, e.g. --lm /home/user/roberta-base
 - `--base_model`: the file path of ER model training on the base attributes. The format is .pt.
-- `--epoch`: Training epoch for updating the A_er per episode. 
+- `--epoch`: Training epoch for updating the $\mathcal{A}_{ER}$ per episode. 
 - `--VaryDelta`: the flag to enable VaryDelta, e.g. force to observe delta path options at max_path length. The default is False.
 - `delta`: the detailed number for VaryDelta, the default is 0
 - `device`: the GPU device to use. Default is 0
@@ -93,13 +93,13 @@ The meaning of the flags:
 
 
 - `--data_name`: the name of the dataset. options: `["persons", "imdb", "amazon-google", "dblp","imdb-1hop","imdb-3hop"]`
-- `--update`: the flag to enable updating the A_er model during training. The default is True.
+- `--update`: the flag to enable updating the $\mathcal{A}_{ER}$ model during training. The default is True.
 - `--method`: the RL method to select. options: `["SchemaEnr","AutoFeature"]`
 - `--max_path`: decide the max attributes to select during RL. Default is 5.
 - `--task`: the name of current task.
 - `--lm`: the path of the local language model folder(currently support Roberta). The default is Roberta-base
 - `--base_model`: the file path of ER model training on the base attributes. The format is .ckpt.
-- `--epoch`: Training epoch for updating the A_er per episode. 
+- `--epoch`: Training epoch for updating the $\mathcal{A}_{ER}$ per episode. 
 
 Others are similar to `enrich_train_RL.py`. Notice you need to use `CUDA_VISIBLE_DEVICES=0` for deploying PrompEM to select GPU.
 
