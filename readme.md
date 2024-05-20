@@ -1,4 +1,11 @@
 ## Enriching Relations with Additional Attributes for ER
+
+* The full version of our paper is available [Here](paper_full_version.pdf)
+
+* For BE and IE code, please check [BE_and_IE](BE_and_IE) folder
+
+
+
 ### Requirements
 Basic requirements are listed in requirements.txt
 Additionally, you need to install 
