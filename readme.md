@@ -71,7 +71,7 @@ The meaning of the flags:
 
 - `--data_name`: the name of the dataset. options: `["persons", "imdb", "amazon-google", "dblp","imdb-1hop","imdb-3hop","persons-3hop","amazon-google-3hop","wdc","wdc-K=1","wdc-K=3","wdc-K=5","wdc-K=7","wdc-K=9","persons-1hop"]`
 - `--model`: the selection of downstream ER model. options: `["ditto", "ditto-aug"]`
-- `--update`: the flag to enable updating the A_er model during training. The default is False.
+- `--update`: the flag to enable updating the \(\mathcal{A}_{ER}\) model during training. The default is False.
 - `--method`: the RL method to select. options: `["SchemaEnr","AutoFeature"]`
 - `--max_path`: decide the max path number to select during RL. Default is 5.
 - `--task`: the name of current task. It will be stored in `data/state` as the memory of RL 
