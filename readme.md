@@ -1,6 +1,6 @@
 ## Enriching Relations with Additional Attributes for ER
 
-* The full version of our paper is available [Here](paper_full_version.pdf)
+* The full version of our paper is available [Here](paper_full_version.pdf) , or you can directly download and check paper_full_version.pdf
 
 * For BE and IE code, please check [BE_and_IE](BE_and_IE) folder
 
