@@ -105,7 +105,15 @@ Others are similar to `enrich_train_RL.py`. Notice you need to use `CUDA_VISIBLE
 
 ### Testing for RL output with Ditto/Ditto-aug
 ```
-python enrich_test.py --data_name amazon-google --model ditto --method SchemaEnr --max_path 5 --task amazon_google_SchemaEnr_da --lm roberta-base --save_model --epoch 16
+python enrich_test.py
+    --data_name amazon-google \
+    --model ditto \
+    --method SchemaEnr \
+    --max_path 5 \
+    --task amazon_google_SchemaEnr_da \
+    --lm roberta-base \
+    --save_model \
+    --epoch 16
 ```
 The meaning of the flags:
 
@@ -122,7 +130,15 @@ The meaning of the flags:
 ### Testing for RL output with PromptEM
 ```
 cd PromptEM
-python enrich_test_PromptEM.py --data_name amazon-google --model ditto --method SchemaEnr --max_path 5 --task amazon_google_SchemaEnr_da --lm roberta-base --save_model --epoch 16
+python enrich_test_PromptEM.py
+    --data_name amazon-google  \
+    --model ditto \
+    --method SchemaEnr \
+    --max_path 5 \
+    --task amazon_google_SchemaEnr_da \
+    --lm roberta-base \
+    --save_model \
+    --epoch 16
 ```
 The meaning of the flags:
 
@@ -139,14 +155,29 @@ The meaning of the flags:
 ### Base Model Generation
 #### Ditto/Ditto-aug
 ```
-python enrich_test.py --data_name amazon-google --model ditto --method Base --max_path 5 --task amazon_google_base --lm roberta-base --save_model --epoch 10
+python enrich_test.py 
+    --data_name amazon-google \
+    --model ditto \
+    --method Base \
+    --max_path 5 \
+    --task amazon_google_base \
+    --lm roberta-base \
+    --save_model \
+    --epoch 10
 ```
 Change the data_name for different base model of different datasets. The model is stored in `model_log/`
 #### PromptEM
 
 ```
 cd PromptEM
-python enrich_test_PromptEM.py --data_name amazon-google --method Base --max_path 5 --task amazon_google_base --lm roberta-base --save_model --epoch 10
+python enrich_test_PromptEM.py
+    --data_name amazon-google \
+    --method Base \
+    --max_path 5 \
+    --task amazon_google_base \
+    --lm roberta-base \
+    --save_model \
+    --epoch 10
 ```
 Change the data_name for different base model of different datasets. The model is stored in `PromptEM/model_log/`
 
