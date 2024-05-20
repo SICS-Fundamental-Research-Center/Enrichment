@@ -4,7 +4,12 @@
 
 * For BE and IE code, please check [BE_and_IE](BE_and_IE) folder
 
+### Dataset
 
+- for SE method, all data are stored in [data](data)
+    - Specially, the Persons datasets are provided in [data/person-3hop](data/person-3hop), the IMDB datasets are provided in [data/imdb](data/imdb)
+- for BE_and _IE method, all data are stored in [BE_and_IE/datasets_and_shell/dataset](BE_and_IE/datasets_and_shell/dataset) folder, which contains Persons and IMDB dataset for the experiment.
+    - Due to the large size of dataset for BE and IE, please download the Zip file from [link](https://www.dropbox.com/sh/kk84zjrgwa0dikc/AABZ6MueJGc03MsZIbw8k-cra?dl=0) , then replace the BE_and_IE folder with the downloaded version.
 
 ### Requirements
 Basic requirements are listed in requirements.txt
