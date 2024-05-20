@@ -1,0 +1,2 @@
+### Dataset
+- Due to the large size of dataset for BE and IE, please download the Zip file from [link](https://www.dropbox.com/sh/kk84zjrgwa0dikc/AABZ6MueJGc03MsZIbw8k-cra?dl=0), then put ``BE_and_IE/datasets_and_shell/dataset/person`` and ``BE_and_IE/datasets_and_shell/dataset/imdb`` in here.
